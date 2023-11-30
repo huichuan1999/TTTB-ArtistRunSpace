@@ -6,7 +6,7 @@ body {
     margin:0;
     padding:0;
     font-family: "Source Han Sans", "思源黑体", Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none; /* 移除下划线 */
 }
 
@@ -56,12 +56,12 @@ a {
     margin: 4px 0;
 }
 
-.about {
+.aboutUs {
     margin-right: 15px;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     padding: 5px; /* 根据需要调整内边距 */
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .content {
@@ -84,7 +84,7 @@ a {
 .social-media a{
     margin-right: 15px;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .social-media a .icon {
