@@ -1,0 +1,146 @@
+body {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding:0;
+    font-family: "Source Han Sans", "思源黑体", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none; /* 移除下划线 */
+}
+
+/* 全局移除所有<a>标签的下划线 */
+a {
+    color: white;
+    text-decoration: none;
+    display: inline-block; /* 或者其他适合的布局 */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 在垂直方向上分布空间 */
+    height: 100vh;
+    position: relative; /* 确保绝对定位的子元素相对于此元素定位 */
+    overflow: hidden; /* 防止出现滚动条 */
+}
+
+.centered-container {
+    display: grid;
+    place-items: center; /* 这是一个简便的方法来同时进行水平和垂直居中 */
+    height: 100vh;
+    margin:0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* border-bottom: 1px solid white; */
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: inline-block;
+    margin-left:10px;
+}
+
+.hamburger-menu .bar {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.sidebar {
+    position: fixed;
+    left: -200px; /* 初始在屏幕外,如果需要更改宽度需要和 menu.js一起改 */
+    width: 200px; /* 侧边栏的宽度 如果需要更改宽度需要和 menu.js一起改 */
+    top: 48px;
+    height: 100%;
+    background-color: #000; /* 背景色 */
+    overflow-y: auto; /* 如果内容过多，允许滚动 */
+    transition: 0.3s; /* 平滑过渡效果 */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    padding-left:20px;
+    border-bottom: 1px solid #fff; /* 分隔线 */
+    color: white;
+    font-size: 16px;
+    line-height: 1.5; /* 调整行间距 */
+}
+
+
+.aboutUs {
+    margin-right: 15px;
+    color: white;
+    font-size: 16px;
+    padding: 5px; /* 根据需要调整内边距 */
+    border: 1px solid white;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between; /* 在水平方向上分布空间 */
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* border-top: 1px solid white; */
+}
+
+.social-media a{
+    margin-right: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.social-media a .icon {
+    margin-right: 8px; /* 在图标和文本之间添加一些间距 */
+    width: 18px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom; /* 确保图标和文本垂直居中对齐 */
+}
+
+/* 初始隐藏悬停图片 */
+.hover-image {
+    display: none;
+    position: absolute;
+    /* 根据需要调整图片位置 */
+    top: -180%;
+    left: 25%;
+    /* transform: translateX(-50%); */
+}
+
+/* 鼠标悬停时显示图片 */
+a:hover .hover-image {
+    display: block;
+}
+
+.hover-image img {
+    width: 100px; /* 图片宽度 */
+    height: auto; /* 高度自动调整以保持图片比例 */
+}
