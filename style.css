@@ -17,7 +17,6 @@ a {
     display: inline-block; /* 或者其他适合的布局 */
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -73,6 +72,7 @@ a {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
 .sidebar li {
@@ -82,6 +82,7 @@ a {
     color: white;
     font-size: 16px;
     line-height: 1.5; /* 调整行间距 */
+    text-decoration: none;
 }
 
 
