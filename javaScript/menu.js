@@ -22,3 +22,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var currentIndex = 0; // 当前图片索引
+    var imageElement = document.querySelector('.centered-container img'); // 获取图片元素
+
+    window.addEventListener('scroll', function() {
+        currentIndex++; // 每次滚动递增索引
+        if (currentIndex >= images.length) {
+            currentIndex = 0; // 如果超出数组长度，重置为0
+        }
+        imageElement.src = images[currentIndex]; // 更新图片源
+    });
+});

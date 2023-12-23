@@ -1,0 +1,31 @@
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.subTitle {
+    color: #FCFCFC;
+    font-family: "ABC Gravity Condensed", sans-serif;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+    z-index: 100;
+    text-wrap: nowrap;
+}
+
+.smallTitle {
+    width: 100%;
+    text-align: center;
+    color: #FCFCFC;
+    font-size: 24px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    word-wrap: break-word
+}
