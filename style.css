@@ -21,9 +21,13 @@ body {
 a {
     color: white;
     text-decoration: none;
-    display: inline-block; /* 或者其他适合的布局 */
+    display: inline-block; 
 }
 
+p{
+    /* 行距1.5倍 */
+    line-height: 1.5; 
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -106,6 +110,56 @@ a {
     border: 1px solid white;
 }
 
+/* 弹窗样式 */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    color:#000;
+    margin: 5% auto;
+    padding: 38px;
+    width: 70%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.close-button {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    margin-left: auto; /* 自动扩展空间使其靠右 */
+    
+    /* overflow: hidden;  */
+    /* 防止图片超出容器 */
+}
+
+.image-container img {
+    display: block;
+    width: auto; /* 或者具体的宽度 */
+    height: auto; /* 或者具体的高度 */
+    position: absolute; /* 使margin生效，依情况而定 */
+}
+
 .content {
     text-align: center;
     margin-top: 50px;
@@ -158,3 +212,4 @@ a:hover .hover-image {
     width: 100px; /* 图片宽度 */
     height: auto; /* 高度自动调整以保持图片比例 */
 }
+
