@@ -155,12 +155,24 @@ p{
     cursor: pointer;
 }
 
+.flex-container{
+    display: flex; /* 启用Flexbox布局 */
+    align-items: flex-start; /* 如果需要，可调整对齐方式 */
+    justify-content: space-between; /* 根据需要调整间隔 */
+    margin-top:20px;
+}
+
+.text-column {
+    width:300px;
+    height:400px;
+}
+
 .image-container {
     position: relative;
     margin-left: auto; /* 自动扩展空间使其靠右 */
-    
-    /* overflow: hidden;  */
-    /* 防止图片超出容器 */
+    width: 620px;
+    height: 450px;
+    scale: 0.8;
 }
 
 .image-container img {
@@ -169,6 +181,18 @@ p{
     height: auto; /* 或者具体的高度 */
     position: absolute; /* 使margin生效，依情况而定 */
 }
+
+#img1 { top: 1px; right: auto; bottom:auto; left: 5px; }
+#img2 { top: 123px; right: auto; bottom: auto; left: 140px; }
+#img3 { top: 0px; right: auto; bottom: auto; left: 312px; }
+#img4 { top: -3px; right: auto; bottom: auto; left: 629px; }
+#img5 { top: 237px; right: auto; bottom: auto; left: 125px; }
+#img6 { top: 118px; right: auto; bottom: auto; left: 488px; }
+#img7 { top: 235px; right: auto; bottom: auto; left: 499px; }
+#img8 { top: 359px; right: auto; bottom: auto; left: 0px; }
+#img9 { top: 359px; right: auto; bottom: auto; left: 316px; }
+#img10 { top: 362px; right: auto; bottom: auto; left: 621px; }
+
 
 .content {
     text-align: center;
