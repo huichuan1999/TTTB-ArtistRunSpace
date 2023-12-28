@@ -2,7 +2,7 @@ let img;
 let vehicles = [];
 
 function preload() {
-  img = loadImage('../Assets/TTTBLOGO.png'); // 替换为您的图片路径
+  img = loadImage('./Assets/TTTBLOGO.png'); // 替换为您的图片路径
 }
 function setup() {
   let cnv = createCanvas(windowWidth,windowHeight);
