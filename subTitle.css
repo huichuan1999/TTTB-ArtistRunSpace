@@ -29,3 +29,22 @@
     letter-spacing: 0.48px;
     word-wrap: break-word
 }
+
+#toggle-container{
+    /* animation: fadeOut 1s ease forwards; */
+}
+
+.center-text-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100vh; /* 容器高度设置为视口高度 */
+    text-align: center; /* 文本居中 */
+    padding: 20px; /* 防止文本紧贴边框 */
+    /* animation: fadeIn 1s ease forwards; */
+}
+
+.center-text-container p {
+    max-width: 400px; /* 根据需要调整最大宽度 */
+    margin: auto; /* 自动外边距实现居中 */
+}
