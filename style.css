@@ -163,9 +163,18 @@ p{
 }
 
 .text-column {
-    width:300px;
+    /* width:400px; */
     height:400px;
 }
+.text-column p {
+    transition: letter-spacing 0.3s ease; /* 平滑过渡效果 */
+    /* 如果需要，可以在这里添加其他样式 */
+}
+.text-column p:hover {
+    letter-spacing: 8px; /* 鼠标悬停时增加文字间距 */
+    color: red;
+}
+
 
 .image-container {
     position: relative;

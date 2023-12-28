@@ -14,24 +14,72 @@ window.onclick = function(event) {
     }
 };
 
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     var container = document.querySelector('.image-container');
-    //     var imgs = container.getElementsByTagName('img');
-    //     var containerWidth = container.offsetWidth;
-    //     var containerHeight = container.offsetHeight;
-    //     var imgWidth = 100;  // 固定图片宽度
-    //     var imgHeight = 100; // 固定图片高度
+document.getElementById('text1').addEventListener('mouseenter', function() {
+    document.getElementById('img1').src = '../Assets/members/1-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text1').addEventListener('mouseleave', function() {
+    document.getElementById('img1').src = '../Assets/members/1.png'; // 鼠标移开时恢复原始图片
+});
 
-    //     for (var i = 0; i < imgs.length; i++) {
-    //         var img = imgs[i];
+document.getElementById('text2').addEventListener('mouseenter', function() {
+    document.getElementById('img2').src = '../Assets/members/2-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text2').addEventListener('mouseleave', function() {
+    document.getElementById('img2').src = '../Assets/members/2.png'; // 鼠标移开时恢复原始图片
+});
 
-    //         var maxX = containerWidth - imgWidth;
-    //         var maxY = containerHeight - imgHeight;
+document.getElementById('text3').addEventListener('mouseenter', function() {
+    document.getElementById('img3').src = '../Assets/members/3-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text3').addEventListener('mouseleave', function() {
+    document.getElementById('img3').src = '../Assets/members/3.png'; // 鼠标移开时恢复原始图片
+});
 
-    //         var randomX = Math.random() * maxX;
-    //         var randomY = Math.random() * maxY;
+document.getElementById('text4').addEventListener('mouseenter', function() {
+    document.getElementById('img4').src = '../Assets/members/4-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text4').addEventListener('mouseleave', function() {
+    document.getElementById('img4').src = '../Assets/members/4.png'; // 鼠标移开时恢复原始图片
+});
 
-    //         img.style.left = randomX + 'px';
-    //         img.style.top = randomY + 'px';
-    //     }
-    // });
+document.getElementById('text5').addEventListener('mouseenter', function() {
+    document.getElementById('img5').src = '../Assets/members/5-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text5').addEventListener('mouseleave', function() {
+    document.getElementById('img5').src = '../Assets/members/5.png'; // 鼠标移开时恢复原始图片
+});
+
+document.getElementById('text6').addEventListener('mouseenter', function() {
+    document.getElementById('img6').src = '../Assets/members/6-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text6').addEventListener('mouseleave', function() {
+    document.getElementById('img6').src = '../Assets/members/6.png'; // 鼠标移开时恢复原始图片
+});
+
+document.getElementById('text7').addEventListener('mouseenter', function() {
+    document.getElementById('img7').src = '../Assets/members/7-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text7').addEventListener('mouseleave', function() {
+    document.getElementById('img7').src = '../Assets/members/7.png'; // 鼠标移开时恢复原始图片
+});
+
+document.getElementById('text8').addEventListener('mouseenter', function() {
+    document.getElementById('img8').src = '../Assets/members/8-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text8').addEventListener('mouseleave', function() {
+    document.getElementById('img8').src = '../Assets/members/8.png'; // 鼠标移开时恢复原始图片
+});
+
+document.getElementById('text9').addEventListener('mouseenter', function() {
+    document.getElementById('img9').src = '../Assets/members/9-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text9').addEventListener('mouseleave', function() {
+    document.getElementById('img9').src = '../Assets/members/9.png'; // 鼠标移开时恢复原始图片
+});
+
+document.getElementById('text10').addEventListener('mouseenter', function() {
+    document.getElementById('img10').src = '../Assets/members/10-1.png'; // 鼠标悬停时更改为红色图片
+});
+document.getElementById('text10').addEventListener('mouseleave', function() {
+    document.getElementById('img10').src = '../Assets/members/10.png'; // 鼠标移开时恢复原始图片
+});
